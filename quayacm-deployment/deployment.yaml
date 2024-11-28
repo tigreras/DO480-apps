@@ -18,6 +18,8 @@ spec:
         app: budget-app
         name: budget-app
     spec:
+      imagePullSecrets:
+      - name: finance-dev-deployer-pull-secret
       containers:
       - image: IMAGE_NAME
         name: budget-app
